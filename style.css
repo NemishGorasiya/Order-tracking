@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #01B2C3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px 0;
+}
+.mobile {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: rgba(36, 92, 182, 0.8) 0px 10px 35px;
+  height: auto;
+}
+.mobile .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #EDEFF1;
+  padding: 20px;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #63757D;
+}
+.main {
+  margin: 30px 0 0 0;
+}
+.main .track {
+  display: flex;
+  padding: 0 40px 30px 30px;
+}
+.main .track > span{
+  margin: 0 15px 0 0;
+  font-size: 22px;
+  position: relative;
+  text-align: center;
+  color: #E5E7E9;
+}
+.main .track > span i {
+  border-radius: 50%;
+}
+.main .track > span::after {
+  content: "";
+  height: 0;
+  width: 2px;
+  background: #61E000;
+  display: block;
+  text-align: center;
+  top: 30px;
+  left: 10px;
+  position: absolute;
+  transition: height 1s ease;
+}
+.main .track:last-child > span::after {
+  height: 0 !important;
+}
+.main .track > span.green::after {
+  height: 100%;
+}
+.main .track .track-details {
+  display: flex;
+  flex-direction: column;
+}
+.main .track .flight h3 {
+  margin-bottom: 18px;
+}
+.main .track .track-details h3 {
+  color: #009BEE;
+  
+}
+.main .track .preparation h3 {
+  margin-bottom: 0;
+}
+.main .track .track-details p{
+  font-size: 13px;
+  color: #506D77;
+}
+.main .track .track-details h2 {
+  letter-spacing: 4px;
+  color: #506D77;
+}
+.main .track .track-details span{
+  background: #EDF0F2;
+  padding: 5px 13px;
+  width: fit-content;
+  font-size: 12px;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.main .track .check-in p {
+  margin-bottom: 5px;
+}
+.main .track .track-details button {
+  color: #fff;
+  background: #009BEE;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 25px;
+  width: fit-content;
+}
+.main .track .pending {
+  color: #E5E7E9;
+}
+.main .track .pending i{
+  box-shadow: none;
+}
+.main .track .pending::after{
+  height: 0;
+}
